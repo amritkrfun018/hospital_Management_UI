@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center container */
+.outerdiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Login box */
+.login_box {
+    background: #ffffffcc;
+    backdrop-filter: blur(10px);
+    padding: 30px 35px;
+    border-radius: 12px ;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Labels */
+.label {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Inputs */
+input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    font-size: 15px;
+    transition: border 0.25s ease, box-shadow 0.25s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3f2b96;
+    box-shadow: 0 0 5px rgba(63, 43, 150, 0.5);
+}
+
+/* Smooth fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.login_btn {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    background: linear-gradient(135deg, #3f2b96, #6a4ff7);
+    color: white;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    white-space: nowrap; /* stops button from shrinking */
+}
+
+.login_btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(63, 43, 150, 0.3);
+}
+
+.login_btn:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}
