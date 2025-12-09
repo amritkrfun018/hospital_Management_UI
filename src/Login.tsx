@@ -13,7 +13,7 @@ useEffect(() => {
     });
 
     if (res.ok) {
-      navigate("/", { replace: true });
+      navigate("/hospital_Management_UI/", { replace: true });
     }
   }
 
@@ -43,7 +43,7 @@ useEffect(() => {
       // Don't read any token — httpOnly cookie is automatically stored by browser
       console.log("Login successful via cookie");
 
-      navigate("/", { replace: true });
+      navigate("/hospital_Management_UI/", { replace: true });
 
     } catch (err) {
       console.error("Error during login:", err);

@@ -7,7 +7,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/login" element={<Login />} />
-        <Route path="/" element={<DoctorInfoDisplay/>} />
+        <Route path="/hospital_Management_UI" element={<DoctorInfoDisplay/>} />
       </Routes>
     </BrowserRouter>
   );
